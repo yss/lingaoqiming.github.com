@@ -645,11 +645,60 @@ footer .credits.right {
 }
 @media print, screen and (max-width: 480px) {
   #header {
-    margin-top: -20px;
+    height: 40px;
+    line-height: 40px;
   }
+  #header>.title {
+    display: block;
+    padding: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #header img {
+    width: 40px;
+    height: 40px;
+  }
+  #header>.title>a {
+    float: none;
+    font-size: 20px;
+    padding: 0 0 0 1rem;
+  }
+
+  #sidebar {
+    left: auto;
+    right: 0;
+    top: 0;
+    z-index: 101;
+  }
+  #sidebar > ul {
+    display: none;
+    background: #111;
+  }
+
+  #sidebar.show > ul { display: block; }
+
+  #sidebar>a{
+    display: block;
+    background: #111;
+  }
+  #sidebar>a:before {
+    content: '<';
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 28px;
+  }
+  #sidebar.show > a:before { content: '>'; }
 
   section {
     margin-top: 40px;
+  }
+  section h1 {
+    padding: 0!important;
+    font-size: 24px!important;
   }
 
   nav {
