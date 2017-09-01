@@ -9,8 +9,8 @@ author:
 
 markdown: rdiscount
 permalink:  none
-production_url: http://blog.yssbox.com/lingaoqiming.github.io/
-baseurl: /lingaoqiming.github.io
+production_url: http://blog.yssbox.com/lingaoqiming.github.com/
+baseurl: /lingaoqiming.github.com
 img_url: http://lingaoqiming.github.io//images
 
 collections:
